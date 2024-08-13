@@ -1,0 +1,113 @@
+:root {
+    
+    --Dark-cyan: #3d8067;
+    --Cream: #f2ebe3;
+    --Very-dark-blue: #1c232b;
+    --Dark-grayish-blue: #6c7289;
+    --White: #ffffff;
+}
+    
+
+  /* font-family: "Fraunces", serif;
+    font-family: "Montserrat", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: var(--Cream);
+}
+
+.card {
+    width: 50%;
+    margin: 4rem auto;
+}
+
+.d-f {
+    display: flex;
+}
+
+.img-container {
+    width: 100%;
+}
+
+.img-container > img {
+    width: 100%;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.info-container {
+    padding: 2.5rem;
+    background-color: var(--White);
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+#perfume {
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 4px;
+    font-size: 14px;
+    color: var(--Dark-grayish-blue);
+}
+
+.title {
+    font-size: 3rem;
+    font-family: "Fraunces", serif;
+    color: var(--Very-dark-blue);
+}
+
+p {
+    color: var(--Dark-grayish-blue);
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.6rem;
+}
+
+.prices {
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+#new {
+    color: var(--Dark-cyan);
+    font-size: 3.5rem;
+    text-align: left;
+    font-family: "Fraunces", serif;
+    font-weight: bolder;
+}
+
+#old {
+    text-decoration: line-through;
+    margin-right: 5rem;
+}
+
+button {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--Dark-cyan);
+    border: transparent;
+    border-radius: 0.5rem;
+}
+
+button > p {
+    color: var(--White);
+    font-size: 1rem;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 80%;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 425) {
+    .card {
+        width: 80%;
+        flex-direction: column;
+    }
+
+}
